@@ -1,3 +1,6 @@
+package pages;
+
+import core.DriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -8,7 +11,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.ZoneId;
 
-public class CriarMovimentacaoPage {
+public class CriarMovimentacaoPage extends DriverManager {
 
     private By cbbTipoMovimentacao = By.id("tipo");
     private By txtDataMov = By.id("data_transacao");
@@ -20,11 +23,6 @@ public class CriarMovimentacaoPage {
     private By btnSalvar = By.xpath("//button[contains(text(),'Salvar')]");
     private By lblOpSucesso = By.xpath("//div[contains(text(),'Movimentação adicionada com sucesso!')]");
 
-    WebDriver driver;
-
-    public CriarMovimentacaoPage(WebDriver driver) {
-        this.driver = driver;
-    }
 
     public boolean isPresent(){
         WebDriverWait wait = new WebDriverWait(driver,10);

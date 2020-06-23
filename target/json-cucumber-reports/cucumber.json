@@ -1,0 +1,108 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9333294400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.init(Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Executar Login Invalido",
+        "description": "",
+        "id": "login;executar-login-invalido",
+        "after": [
+          {
+            "result": {
+              "duration": 174864800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.end(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 824574400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "eu acesso a url \"https://seubarriga.wcaquino.me/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://seubarriga.wcaquino.me/login",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginSteps.euAcessoAUrl(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1144526400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "eu logar na aplicacao com usuario \"1234@teste.com\" e senha \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1234@teste.com",
+                  "offset": 35
+                },
+                {
+                  "val": "1234",
+                  "offset": 60
+                }
+              ],
+              "location": "LoginSteps.euLogarNaAplicacaoComUsuarioESenha(String,String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 57750837600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "sera apresentado um mensagem \"Problemas com o login do usuário\" de login invalido",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Problemas com o login do usuário",
+                  "offset": 30
+                }
+              ],
+              "location": "LoginSteps.seraApresentadoUmMensagemDeLoginInvalido(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dev"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  Eu como cliente gostaria de acessar o sistema via login somente com credenciais validas",
+    "id": "login",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/resources/features/Login.feature",
+    "tags": []
+  }
+]

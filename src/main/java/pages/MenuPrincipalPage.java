@@ -1,18 +1,15 @@
+package pages;
+
+import core.DriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class MenuPrincipalPage {
+public class MenuPrincipalPage extends DriverManager {
 
-    WebDriver driver;
     private By lblNomeUsuario = By.xpath("//div[contains(text(),'Bem vindo')]");
-
-
-    public MenuPrincipalPage(WebDriver driver) {
-        this.driver = driver;
-    }
 
     public boolean isPresent(){
         WebDriverWait wait = new WebDriverWait(driver,10);

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="69.24328">
+<testcase classname="Login" name="Executar Login Invalido" time="69.24328">
+<system-out><![CDATA[Dado eu acesso a url "https://seubarriga.wcaquino.me/login".................passed
+Quando eu logar na aplicacao com usuario "1234@teste.com" e senha "1234"....passed
+Entao sera apresentado um mensagem "Problemas com o login do usuário" de login invalido.passed
+]]></system-out>
+</testcase>
+</testsuite>
