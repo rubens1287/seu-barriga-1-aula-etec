@@ -1,0 +1,5 @@
+core\Report.class
+pages\CriarMovimentacaoPage.class
+pages\LoginPage.class
+core\DriverManager.class
+pages\MenuPrincipalPage.class

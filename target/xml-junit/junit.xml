@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="69.24328">
-<testcase classname="Login" name="Executar Login Invalido" time="69.24328">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="36.358341">
+<testcase classname="Login" name="Executar login com credenciais validas" time="22.58662">
+<system-out><![CDATA[Dado eu acesso a url "https://seubarriga.wcaquino.me/login".................passed
+Quando eu logar na aplicacao com usuario "teste123@teste.com.br" e senha "1234".passed
+Entao sera apresentado a tela do menu principal.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Executar Login Invalido" time="13.771721">
 <system-out><![CDATA[Dado eu acesso a url "https://seubarriga.wcaquino.me/login".................passed
 Quando eu logar na aplicacao com usuario "1234@teste.com" e senha "1234"....passed
 Entao sera apresentado um mensagem "Problemas com o login do usuário" de login invalido.passed

@@ -1,6 +1,7 @@
 package pages;
 
 import core.DriverManager;
+import core.Report;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +14,7 @@ public class MenuPrincipalPage extends DriverManager {
 
     public boolean isPresent(){
         WebDriverWait wait = new WebDriverWait(driver,10);
+        Report.takeScreeShot();
         return wait.until(ExpectedConditions.presenceOfElementLocated(lblNomeUsuario)).isDisplayed();
     }
 

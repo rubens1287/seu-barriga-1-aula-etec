@@ -6,7 +6,96 @@
         "before": [
           {
             "result": {
-              "duration": 9333294400,
+              "duration": 12229606100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.init(Scenario)"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Executar login com credenciais validas",
+        "description": "",
+        "id": "login;executar-login-com-credenciais-validas",
+        "after": [
+          {
+            "result": {
+              "duration": 4283342500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.end(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 905728600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "eu acesso a url \"https://seubarriga.wcaquino.me/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://seubarriga.wcaquino.me/login",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginSteps.euAcessoAUrl(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 2942939100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "eu logar na aplicacao com usuario \"teste123@teste.com.br\" e senha \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "teste123@teste.com.br",
+                  "offset": 35
+                },
+                {
+                  "val": "1234",
+                  "offset": 67
+                }
+              ],
+              "location": "LoginSteps.euLogarNaAplicacaoComUsuarioESenha(String,String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 999742600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "sera apresentado a tela do menu principal",
+            "match": {
+              "location": "LoginSteps.seraApresentadoATelaDoMenuPrincipal()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dev"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7454280100,
               "status": "passed"
             },
             "match": {
@@ -21,7 +110,7 @@
         "after": [
           {
             "result": {
-              "duration": 174864800,
+              "duration": 1459081000,
               "status": "passed"
             },
             "match": {
@@ -34,7 +123,7 @@
         "steps": [
           {
             "result": {
-              "duration": 824574400,
+              "duration": 852189500,
               "status": "passed"
             },
             "line": 14,
@@ -52,7 +141,7 @@
           },
           {
             "result": {
-              "duration": 1144526400,
+              "duration": 3337077900,
               "status": "passed"
             },
             "line": 15,
@@ -74,7 +163,7 @@
           },
           {
             "result": {
-              "duration": 57750837600,
+              "duration": 660934200,
               "status": "passed"
             },
             "line": 16,
@@ -89,11 +178,6 @@
               "location": "LoginSteps.seraApresentadoUmMensagemDeLoginInvalido(String)"
             },
             "keyword": "Entao "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@dev"
           }
         ]
       }
